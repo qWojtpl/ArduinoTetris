@@ -111,7 +111,7 @@ void moveBlockX() {
   for(int i = 0; i < blockSize; i++) {
     int x = currentBlockX[i];
     int y = currentBlockY[i];
-    if(analogRead(YPIN) > 1020 && x > 1 && !points[x - 1][y]) {
+    if(analogRead(YPIN) > 1020 && x > 0 && !points[x - 1][y]) {
       passLeft = true;
     } else if(passLeft) {
       passLeft = false;
